@@ -11,6 +11,10 @@ public:
     void paint(juce::Graphics& g) override;
     void handleExtremeValues(float maxVolume, float attack);
 
+    // Getter methods
+    float getMaxVolume() const { return maxVolume; }
+    float getAttack() const { return attack; }
+
 private:
     float maxVolume;
     float attack;

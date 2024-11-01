@@ -11,6 +11,11 @@ public:
     void paint(juce::Graphics& g) override;
     void handleExtremeValues(float wetDryMix, float delayTime, int numberOfDelays);
 
+    // Getter methods
+    float getWetDryMix() const { return wetDryMix; }
+    float getDelayTime() const { return delayTime; }
+    int getNumberOfDelays() const { return numberOfDelays; }
+
 private:
     float wetDryMix;
     float delayTime;

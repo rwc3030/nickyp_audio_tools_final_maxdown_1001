@@ -11,6 +11,9 @@ public:
     void paint(juce::Graphics& g) override;
     void handleExtremeValues(float frequencyBands[5]);
 
+    // Getter method
+    const float* getFrequencyBands() const { return frequencyBands; }
+
 private:
     float frequencyBands[5]; // Example for 5 bands
 };
