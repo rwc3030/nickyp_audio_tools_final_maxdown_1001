@@ -13,9 +13,10 @@ public:
     AdvancedMixingControls();
     void resized() override;
     void paint(juce::Graphics& g) override;
-    void initializeControls();
 
 private:
+    void initializeControls();
+
     EQControl* eqControl;
     CompressionControl* compressionControl;
     ReverbControl* reverbControl;
