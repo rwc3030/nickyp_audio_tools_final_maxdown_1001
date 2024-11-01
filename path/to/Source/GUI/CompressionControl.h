@@ -9,6 +9,7 @@ public:
     CompressionControl();
     void setDefaultValues();
     void paint(juce::Graphics& g) override;
+    void handleExtremeValues(float threshold, float ratio, float attack, float release);
 
 private:
     float threshold;

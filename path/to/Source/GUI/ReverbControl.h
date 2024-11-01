@@ -9,6 +9,7 @@ public:
     ReverbControl();
     void setDefaultValues();
     void paint(juce::Graphics& g) override;
+    void handleExtremeValues(float wetDryMix, float delayTime, int numberOfDelays);
 
 private:
     float wetDryMix;

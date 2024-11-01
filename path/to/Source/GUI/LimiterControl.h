@@ -9,6 +9,7 @@ public:
     LimiterControl();
     void setDefaultValues();
     void paint(juce::Graphics& g) override;
+    void handleExtremeValues(float maxVolume, float attack);
 
 private:
     float maxVolume;

@@ -9,6 +9,7 @@ public:
     EQControl();
     void setDefaultValues();
     void paint(juce::Graphics& g) override;
+    void handleExtremeValues(float frequencyBands[5]);
 
 private:
     float frequencyBands[5]; // Example for 5 bands
