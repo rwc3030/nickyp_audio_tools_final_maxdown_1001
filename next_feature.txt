@@ -1,0 +1,16 @@
+# Next Feature Details
+
+## Milestone
+- [Placeholder for milestone]
+
+## Epic
+- [Placeholder for epic]
+
+## Feature
+- [Placeholder for feature]
+
+## User Story
+- [Placeholder for user story]
+
+## Acceptance Criteria
+- [Placeholder for acceptance criteria]
