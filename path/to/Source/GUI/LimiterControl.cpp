@@ -1,18 +1,19 @@
 #include "LimiterControl.h"
 
-LimiterControl::LimiterControl()
-{
+LimiterControl::LimiterControl() {
     setDefaultValues();
 }
 
-void LimiterControl::setDefaultValues()
-{
-    maxVolume = 0.0f; // Example default value
-    attack = 10.0f; // Example default value
+void LimiterControl::setDefaultValues() {
+    maxVolume = 0.0f;
+    attack = 0.1f;
 }
 
-void LimiterControl::paint(juce::Graphics& g)
-{
-    g.fillAll(juce::Colours::blue);
-    // Additional painting code can be added here
+void LimiterControl::paint(juce::Graphics& g) {
+    // Painting logic here
+}
+
+void LimiterControl::handleExtremeValues(float maxVolume, float attack) {
+    this->maxVolume = juce::jlimit(-60.0f, 0.0f, maxVolume);
+    this->attack = juce::jlimit(0.01f, 1.0f, attack);
 }

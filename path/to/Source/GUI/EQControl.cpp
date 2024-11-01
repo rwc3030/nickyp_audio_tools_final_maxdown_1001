@@ -1,18 +1,21 @@
 #include "EQControl.h"
 
-EQControl::EQControl()
-{
+EQControl::EQControl() {
     setDefaultValues();
 }
 
-void EQControl::setDefaultValues()
-{
-    for (int i = 0; i < 5; ++i) // Example for 5 bands
-        frequencyBands[i] = 0.0f; // Example default value
+void EQControl::setDefaultValues() {
+    for (int i = 0; i < 5; ++i) {
+        frequencyBands[i] = 0.0f;
+    }
 }
 
-void EQControl::paint(juce::Graphics& g)
-{
-    g.fillAll(juce::Colours::darkgreen);
-    // Additional painting code can be added here
+void EQControl::paint(juce::Graphics& g) {
+    // Painting logic here
+}
+
+void EQControl::handleExtremeValues(float frequencyBands[5]) {
+    for (int i = 0; i < 5; ++i) {
+        this->frequencyBands[i] = juce::jlimit(-12.0f, 12.0f, frequencyBands[i]);
+    }
 }
