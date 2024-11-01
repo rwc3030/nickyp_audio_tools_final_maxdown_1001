@@ -14,6 +14,12 @@
 - [ ] Bug: Reverb module does not retain settings after plugin reload.
 - [ ] Bug: Limiter control shows incorrect maximum volume indicator under certain conditions.
 
+## Gaps to Feature Completeness
+- **EQ Control**: The EQ control needs a visual representation of frequency adjustments to provide user feedback. Additionally, a reset button for frequency bands would enhance usability.
+- **Compression Engine**: The compression engine requires a visual meter to indicate gain reduction, which is essential for users to understand the effect of their settings.
+- **Reverb Module**: The reverb module should include a preset management system to allow users to save and recall their favorite settings easily.
+- **Limiter Control**: The limiter control needs an audible feedback mechanism to alert users when the maximum volume threshold is approached, ensuring they can make adjustments before distortion occurs.
+
 ## File and Directory Structure Adjustments
 - Adjusted the project directory structure to align with the requirements specified in 'README.md'. The following directories were created:
   - Source/Core
