@@ -7,20 +7,19 @@
 #include "ReverbControl.h"
 #include "LimiterControl.h"
 
-class AdvancedMixingControls : public juce::Component
-{
+class AdvancedMixingControls : public juce::Component {
 public:
     AdvancedMixingControls();
-    void resized() override;
     void paint(juce::Graphics& g) override;
+    void resized() override;
 
 private:
-    EQControl* eqControl;
-    CompressionControl* compressionControl;
-    ReverbControl* reverbControl;
-    LimiterControl* limiterControl;
+    void setDefaultValues();
 
-    void initializeControls();
+    EQControl eq;
+    CompressionControl compressor;
+    ReverbControl reverb;
+    LimiterControl limiter;
 };
 
 #endif // ADVANCEDMIXINGCONTROLS_H
