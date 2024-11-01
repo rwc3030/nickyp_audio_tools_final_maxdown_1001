@@ -1,12 +1,10 @@
 #include "AdvancedMixingControls.h"
+#include "EQControl.h"
+#include "CompressionControl.h"
+#include "ReverbControl.h"
+#include "LimiterControl.h"
 
 AdvancedMixingControls::AdvancedMixingControls() {
-    // Initialize controls
-    setDefaultValues();
-}
-
-void AdvancedMixingControls::setDefaultValues() {
-    // Set default values for EQ, compression, reverb, and limiting
     eq.setDefaultValues();
     compressor.setDefaultValues();
     reverb.setDefaultValues();
@@ -14,17 +12,23 @@ void AdvancedMixingControls::setDefaultValues() {
 }
 
 void AdvancedMixingControls::paint(juce::Graphics& g) {
-    // Paint the controls
+    g.fillAll(juce::Colours::black);
     eq.paint(g);
     compressor.paint(g);
     reverb.paint(g);
     limiter.paint(g);
 }
 
-void AdvancedMixingControls::resized() {
-    // Resize the controls
-    eq.setBounds(getLocalBounds().removeFromTop(100));
-    compressor.setBounds(getLocalBounds().removeFromTop(100));
-    reverb.setBounds(getLocalBounds().removeFromTop(100));
-    limiter.setBounds(getLocalBounds().removeFromTop(100));
+void AdvancedMixingControls::setDefaultValues() {
+    eq.setDefaultValues();
+    compressor.setDefaultValues();
+    reverb.setDefaultValues();
+    limiter.setDefaultValues();
+}
+
+void AdvancedMixingControls::handleExtremeValues() {
+    eq.handleExtremeValues(eq.getFrequencyBands());
+    compressor.handleExtremeValues(compressor.getThreshold(), compressor.getRatio(), compressor.getAttack(), compressor.getRelease());
+    reverb.handleExtremeValues(reverb.getWetDryMix(), reverb.getDelayTime(), reverb.getNumberOfDelays());
+    limiter.handleExtremeValues(limiter.getMaxVolume(), limiter.getAttack());
 }

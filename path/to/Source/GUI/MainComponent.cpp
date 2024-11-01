@@ -1,18 +1,17 @@
 #include "MainComponent.h"
 #include "AdvancedMixingControls.h"
 
-MainComponent::MainComponent()
-{
+MainComponent::MainComponent() {
     setSize(800, 600);
-    addAndMakeVisible(mixingControls);
+    addAndMakeVisible(advancedMixingControls);
 }
 
-void MainComponent::resized()
-{
-    mixingControls.setBounds(getLocalBounds());
+void MainComponent::paint(juce::Graphics& g) {
+    g.fillAll(juce::Colours::grey);
 }
 
-void MainComponent::paint(juce::Graphics& g)
-{
-    g.fillAll(juce::Colours::darkgrey);
+void MainComponent::resized() {
+    advancedMixingControls.setBounds(getLocalBounds());
 }
+
+AdvancedMixingControls advancedMixingControls;
