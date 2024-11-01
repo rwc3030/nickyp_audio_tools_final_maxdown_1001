@@ -14,3 +14,18 @@
 - [ ] Bug: Reverb module does not retain settings after plugin reload.
 - [ ] Bug: Limiter control shows incorrect maximum volume indicator under certain conditions.
 
+## File and Directory Structure Adjustments
+- Adjusted the project directory structure to align with the requirements specified in 'README.md'. The following directories were created:
+  - Source/Core
+  - Source/GUI
+  - Source/Presets
+  - Resources/Images/CompanyAssets
+  - Resources/Presets
+  - Tests/DSP
+  - Tests/GUI
+  - Tests/Integration
+  - Docs/API
+  - Docs/DSP
+  - Docs/GUI
+  - Docs/Testing
+
