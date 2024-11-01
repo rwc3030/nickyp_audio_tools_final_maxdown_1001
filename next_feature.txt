@@ -20,7 +20,7 @@
   - A limiting section with clear indicators for maximum volume.
 
 ## Issues to Address
-- Review the generated code for logical flow, edge cases, and functional integrity. **Status: Resolved**
+- Review the generated code for logical flow, edge cases, and functional integrity. **Status: In Progress**
 - Identify any potential edge cases that may not be handled properly. **Status: Resolved**
 - Ensure that all functional requirements are met and documented. **Status: Resolved**
 - **Resolved Issue**: Proper handling of extreme parameter values in the EQ and compression modules has been implemented.
@@ -34,4 +34,4 @@
 - **Resolved Issue**: All issues have been addressed and resolved.
 
 ## Status
-- All issues have been identified and are being addressed. The feature is now complete.
+- All issues have been identified and are being addressed. The feature is now in progress.
