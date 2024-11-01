@@ -1,5 +1,4 @@
 #include "AdvancedMixingControls.h"
-#include <JuceHeader.h>
 
 AdvancedMixingControls::AdvancedMixingControls()
 {
@@ -9,26 +8,26 @@ AdvancedMixingControls::AdvancedMixingControls()
 
 void AdvancedMixingControls::initializeControls()
 {
-    // Create and configure EQ control
+    // EQ Control
     eqControl = new EQControl();
     addAndMakeVisible(eqControl);
 
-    // Create and configure Compression control
+    // Compression Control
     compressionControl = new CompressionControl();
     addAndMakeVisible(compressionControl);
 
-    // Create and configure Reverb control
+    // Reverb Control
     reverbControl = new ReverbControl();
     addAndMakeVisible(reverbControl);
 
-    // Create and configure Limiter control
+    // Limiter Control
     limiterControl = new LimiterControl();
     addAndMakeVisible(limiterControl);
 }
 
 void AdvancedMixingControls::resized()
 {
-    // Set bounds for each control
+    // Layout controls
     auto area = getLocalBounds();
     eqControl->setBounds(area.removeFromTop(100));
     compressionControl->setBounds(area.removeFromTop(100));

@@ -15,14 +15,12 @@ public:
     void paint(juce::Graphics& g) override;
 
 private:
-    void initializeControls();
-
     EQControl* eqControl;
     CompressionControl* compressionControl;
     ReverbControl* reverbControl;
     LimiterControl* limiterControl;
 
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(AdvancedMixingControls)
+    void initializeControls();
 };
 
 #endif // ADVANCEDMIXINGCONTROLS_H
