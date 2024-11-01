@@ -26,9 +26,11 @@
 - **Resolved Issue**: Proper handling of extreme parameter values in the EQ and compression modules has been implemented.
 - **Resolved Issue**: Performance of the reverb module has been validated under various load conditions.
 - **Resolved Issue**: The limiting section has been checked to ensure it does not introduce unwanted distortion at high volume levels.
+- **New Issue**: Review the handling of simultaneous parameter adjustments to ensure no conflicts arise.
+- **New Issue**: Validate the performance of the plugin under high CPU load scenarios to ensure stability.
 
 ## Status
-- All issues have been identified and resolved. The feature is now complete.
+- All issues have been identified and are being addressed. The feature is not yet complete.
 
 ## Extracted Details
 - Milestone: VST Plugin Release 1.0
