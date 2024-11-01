@@ -31,7 +31,7 @@
 - **Resolved Issue**: Checked for potential memory leaks during parameter adjustments.
 - **Resolved Issue**: Validated the user interface responsiveness under heavy processing loads.
 - **Resolved Issue**: Ensured that all controls are accessible and usable with keyboard navigation.
-- **New Issue**: Review the generated code for logical flow, edge cases, and functional integrity. **Status: Resolved**
+- **New Issue**: Review the generated code for logical flow, edge cases, and functional integrity. **Status: In Progress**
 
 ## Status
-- All issues have been identified and are being addressed. The feature is now complete.
+- All issues have been identified and are being addressed. The feature is now in progress.
