@@ -2,15 +2,17 @@
 
 EQControl::EQControl()
 {
-    // Initialize EQ control
+    setDefaultValues();
 }
 
 void EQControl::setDefaultValues()
 {
-    // Set default values for EQ control
+    for (int i = 0; i < 5; ++i) // Example for 5 bands
+        frequencyBands[i] = 0.0f; // Example default value
 }
 
 void EQControl::paint(juce::Graphics& g)
 {
-    g.fillAll(juce::Colours::grey);
+    g.fillAll(juce::Colours::darkgreen);
+    // Additional painting code can be added here
 }

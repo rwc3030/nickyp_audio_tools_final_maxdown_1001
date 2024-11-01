@@ -9,6 +9,11 @@ public:
     ReverbControl();
     void setDefaultValues();
     void paint(juce::Graphics& g) override;
+
+private:
+    float wetDryMix;
+    float delayTime;
+    int numberOfDelays;
 };
 
 #endif // REVERBCONTROL_H

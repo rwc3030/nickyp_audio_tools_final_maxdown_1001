@@ -9,6 +9,10 @@ public:
     LimiterControl();
     void setDefaultValues();
     void paint(juce::Graphics& g) override;
+
+private:
+    float maxVolume;
+    float attack;
 };
 
 #endif // LIMITERCONTROL_H

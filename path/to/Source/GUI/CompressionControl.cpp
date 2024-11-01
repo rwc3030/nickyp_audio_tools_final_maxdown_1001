@@ -2,15 +2,19 @@
 
 CompressionControl::CompressionControl()
 {
-    // Initialize Compression control
+    setDefaultValues();
 }
 
 void CompressionControl::setDefaultValues()
 {
-    // Set default values for Compression control
+    threshold = -10.0f; // Example default value
+    ratio = 4.0f; // Example default value
+    attack = 10.0f; // Example default value
+    release = 100.0f; // Example default value
 }
 
 void CompressionControl::paint(juce::Graphics& g)
 {
     g.fillAll(juce::Colours::grey);
+    // Additional painting code can be added here
 }
