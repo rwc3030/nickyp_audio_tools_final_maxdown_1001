@@ -10,12 +10,11 @@
 class AdvancedMixingControls : public juce::Component {
 public:
     AdvancedMixingControls();
+    void setDefaultValues();
     void paint(juce::Graphics& g) override;
     void resized() override;
 
 private:
-    void setDefaultValues();
-
     EQControl eq;
     CompressionControl compressor;
     ReverbControl reverb;
