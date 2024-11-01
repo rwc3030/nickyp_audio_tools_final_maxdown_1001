@@ -11,7 +11,7 @@ public:
     void paint(juce::Graphics& g) override;
 
 private:
-    void initializeSliders();
+    void initializeControls();
 
     juce::Slider eqSlider;
     juce::Slider compressionSlider;
