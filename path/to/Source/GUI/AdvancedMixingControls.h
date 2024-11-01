@@ -11,10 +11,12 @@ public:
     void paint(juce::Graphics& g) override;
 
 private:
+    void initializeSliders();
+
     juce::Slider eqSlider;
     juce::Slider compressionSlider;
     juce::Slider reverbSlider;
-    juce::Slider limitSlider;
+    juce::Slider limiterSlider;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(AdvancedMixingControls)
 };
